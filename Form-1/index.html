@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend style="color: white;font-size:2rem;">Personal details</legend>
+        <div>
+            <label for="fn">First name:</label>
+            <input id="fn">
+        </div>
+        <div>
+            <label for="ln">Last name:</label>
+            <input id="ln">
+        </div>
+        <div>
+            <label for="ln">State:</label>
+            <select>
+                <option>----select state----</option>
+                <optgroup label="East India">
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Punjab">Punjab</option>
+            </optgroup>
+            <optgroup label="North India">
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                </optgroup>
+            <optgroup label="West India">
+                <option value="Gujarat">Gujarat</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+            </optgroup>
+            <optgroup label="South India">
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Odisha">Odisha</option>
+            </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="hobbies">Hobbies</label>
+            <input list="hobbies">
+            <datalist id="hobbies">
+                <option>singing</option>
+                <option>dancing</option>
+                <option>gardening</option>
+                <option>painting</option>
+            </datalist>
+        </div>
+        <div>
+            <label>Address:</label>
+            <textarea></textarea>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input id="email">
+        </div>
+        <div>
+            <label for="phone">Phone number:</label>
+            <input id="phone">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend style="color: white;font-size:2rem;">Academic details</legend>
+        <div>
+            <label for="ssc">SSC</label>
+            <input>
+        </div>
+        <div id="details">
+            <label for="lnter">Intermediate</label>
+            <input>
+        </div>
+        <div>
+            <label for="ug">UG:</label>
+            <input>
+        </div>
+        <div>
+            <label for="pg">PG:</label>
+            <input>
+        </div>
+        <div>
+            <button type="submit" >submit</button>
+            <button type="button" >calculate</button>
+            <button type="reset" >reset</button></div>
+            </fieldset>
+    </form>
+</body>
+</html>
